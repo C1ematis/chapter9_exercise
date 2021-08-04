@@ -1,0 +1,83 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>HTML・CSSを学ぼう</title>
+
+    <script src="https://kit.fontawesome.com/4377e86575.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+    <!-- コード記入 ページ内に反映 -->
+    <header>
+      
+    </header>
+
+    
+    <div>
+
+    </div>
+
+
+    <footer>
+
+    </footer>
+
+  </body>
+</html>
+
+<!--
+  *HTMLコード*
+
+<h1>見出し</h1> :（h1,h2,h3,h4...と数が大きくなるほど、見出しは小さくなります。h6まであります）
+<p>段落（文章のまとまり）</p>
+<a href = "https:--" >リンク</a>
+<ul>箇条書き</ul>
+<img src="sample.jpg" alt="サンプル画像">：画像を表示する(alt=は画像が表示されなかったときに表示する文字列)
+<br>：改行
+<div>囲われた部分を1塊として扱う</div>：特に意味を持たない為、ざまざまの用途に使える。ブロック単位
+<span>囲われた部分を1塊として扱う</span>:'div'と同じだが、インライン単位(改行されない)
+<header></header>,<footer></footer>:ヘッダーとフッター領域を作る
+<nav></nav>:ナビゲーションメニューの領域を作る。中に'ul''ol'を入れる
+<ul></ul>,<ol></ol>：'ul'は箇条書きリスト、'ol'は番号付きリスト。'li'と同時に使う
+<li>リスト内容</li>：'ul'が"・"  、'ol'が"1" がデフォルトで先頭につく
+<main></main> :中心的なコンテンツを表す要素。'header'や'nav'要素を子要素にできない。
+<section></section> :セクション要素。<h>での見出しの設定が必要
+id=""コード内に1つだけ。class=""何回でも使用可能 ：タグを設定することで個別にCSSコードでスタイルを変えられる。複数のタグを設定可能
+<script src="https://kit.fontawesome.com/4377e86575.js" crossorigin="anonymous"></script> ：アイコン挿入のスクリプト読み込み
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> :レスポンシブ対応の記述。"width=device-width"でコンテンツの表示領域をデバイスの横幅に設定。"initial-scale"で表示倍率を指定
+
+  *CSSコード*
+
+h1{｝：<h1>に対しての変更（＃id名{} .class名{} 等も使える）
+タグ名:nth-child(){} :特定の番に対して適応（n(n番目) odd(奇数) even(偶数)）
+:hover(マウスカーソルが乗っているとき) :active(クリック中) :first-child(最初に出てきたとき)
+
+color: rgba(255, 128, 0, 0.800); ：透過80%のオレンジ色(FF,80,0)に変更
+height: --px; :高さをピクセル単位で指定
+width：--%; ：横幅を相対サイズで指定(スマホ等の小さい画面に表示させるのに便利)他に’auto’がある
+background-color: #カラーコード; :指定した領域を塗りつぶし
+border: 5px solid yellow; :枠線を5ピクセル・実線・黄色で表示（線は他にもdouble（二重線）、dashed（破線）、dotted（点線）がある）
+  border-top-width: 5px; ：一部の枠線の太さを変更（top（上）right（右）bottom（下）left（左））（color (色) style (線) がある）
+margin: 5px; ：外側の余白。背景色が適応されない。-top等で一部だけに適応。引数によっても変化する
+padding: auto; ：内側の余白。背景色が適応される。1つは全周、2つは上下と左右、3つは上 左右 下、4つは上右下左の順。
+list-style: none;：リストの先頭"・"を無くす（circle(◯) square(■)がある）
+display: inline-block; インラインとブロック要素の利点を掛け合わせた状態に。余白や幅,高さを自由になり横並びで表示される。隙間が出来るが親要素の'font-size'を"0"で解決
+text-align: center; :テキストや画像の行揃えを中央に設定（right(右) left(左)）
+line-height: 50px; :文字の余白を設定。50px間隔の中央に文字を表示。単位を無しで倍率。
+background-image: url(画像のパス); ：背景に画像の表示
+background-size: auto; :初期はauto（auto(画像サイズのまま表示。枠外は表示されない。領域内で複数表示も)contain(縦横比を維持し伸縮。全体を表示。複数表示)
+                                   cover(縦横比を維持し伸縮し1枚で表示。枠外は表示無し)100% 100%(縦横比を無視し表示領域の幅高さ100％で表示。複数表示)）
+background-position: center; :画像を中央に表示。数値で記述や"top"等でも可能
+border-radius: 3px; :領域の角を丸める。50％で正円になる
+position: static; :ポジションの設定。初期は変化なし（absolute(左上を原点とした絶対位置) relative(現在位置を原点とした相対位置)）
+  top: ; bottom: ; left: ; right: ; :positionを設定した後に使用可能。それぞれ上下左右からの距離を設定できる
+font-family: ; :フォントの設定。設定したフォントが無い場合の事を考え複数設定する。表示されるのは先頭からPCにあるもの。最後に総称フォント[sans-serif]を指定
+@media screen and (max-width:425px){} :ハードの画面サイズによる変更箇所の記述場所。()内にサイズの指定
+-->
